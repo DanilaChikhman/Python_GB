@@ -6,10 +6,10 @@
 # - 0,56 -> 11
 
 s = list(map(str,input('введите число ') )) # пишет стринг переводит в список
-
+print(s)
 for char in s:
     # print(char, char.isalpha())
-    if char.isalpha()==1:  # проверяет является ли буквой 1 -тру
+    if char.isalpha()==1:  # проверяет является ли буквой 1 ==тру
         print("ошибка это не число")
         exit()
 

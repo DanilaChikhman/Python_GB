@@ -5,18 +5,23 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
+s = list(map(str,input('введите число ') )) # пишет стринг переводит в список
+
+for char in s:
+    # print(char, char.isalpha())
+    if char.isalpha()==1:  # проверяет является ли буквой 1 -тру
+        print("ошибка это не число")
+        exit()
 
 
-
-s = list(map(str,input('введите число ') ))
-s = [item.replace(",", "") for item in s]
+s = [item.replace(",", "") for item in s] #удаляет запятые
 print(s)
-s=list(filter(None, s))
+s=list(filter(None, s)) #удаляет пустые ячейки списка
 print(s)
-s=list(map(int, s))
+s=list(map(int, s)) # переводит список в инт
 print(s)
-s=sum(s)
-print(s)
+s=sum(s) #сумма элементов списка
+print("Ответ:  " , s)
 
 
 

@@ -10,7 +10,7 @@ s = int(input('введите колличество элементов в сп�
 i = 0
 arr =[]
 while i <= s-1:
-    r =round(random.uniform(0.5, 10.5), 2) #генерация дробных и округление
+    r =round(random.uniform(0.5, 10.5), 1) #генерация дробных и округление
     arr.append(r)
     #print(r)
     i=i+1
@@ -18,9 +18,9 @@ print(f'список {arr}')
 arr2=[]
 i=0
 while i <= s-1:
-    r=round(arr[i], 0)
+    r=int(arr[i])
     #print(r)
-    x=round(arr[i]-r,2)
+    x=round(arr[i]-r,1)
     arr2.append(x)
     i=i+1
 print(f'дробная часть {arr2}')
